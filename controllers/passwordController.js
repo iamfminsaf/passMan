@@ -4,8 +4,9 @@ const getPasswords = (req, res) => {
   });
 };
 const newPassword = (req, res) => {
+  const {title,app,password} = req.body
   res.json({
-    msg: "Create new password",
+    msg: "Created new password",
   });
 };
 const updatePassword = (req, res) => {
